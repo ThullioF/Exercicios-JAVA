@@ -10,10 +10,18 @@ public class Aluno {
         this.p2 = p2;
     }
     public void notaFinal(){
-        media = this.p1 + this.p2 / 2;
+        media = (this.p1 + this.p2) / 2;
         System.out.println("A média é: " + media);
     }
     public void dadosAlunos(){
         System.out.println("Número aluno: " + this.numeroALuno + " Nome: " + this.nome + " Idade: " + this.idade);
     }
-}
+    public void passou(){
+        if(media >= 6){
+            System.out.println("Aluno aprovado");}
+        else {
+            System.out.println("Aluno reprovado");
+        }
+        }
+    }
+
