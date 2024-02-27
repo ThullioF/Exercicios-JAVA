@@ -8,10 +8,24 @@ public class Cliente {
         this.nome = nome;
         this.saldo = saldo;
     }
-    public void realizarDeposito(){
-
+    public void depositar(float x){
+        this.saldo += x;
     }
-    public void realizarSaque(){
-
+    public void sacar(float x){
+        if(this.saldo - x >= 0){
+            this.saldo -= x;
+        }
+        else {
+            System.out.println("Saldo insuficiente");
+        }
+    }
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "numeroConta=" + numeroConta +
+                ", numeroAgencia=" + numeroAgencia +
+                ", nome='" + nome + '\'' +
+                ", saldo=" + saldo +
+                '}';
     }
 }

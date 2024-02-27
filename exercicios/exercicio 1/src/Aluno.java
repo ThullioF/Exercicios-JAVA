@@ -9,15 +9,15 @@ public class Aluno {
         this.p1 = p1;
         this.p2 = p2;
     }
-    public void notaFinal(){
-        media = (this.p1 + this.p2) / 2;
-        System.out.println("A média é: " + media);
+    public float notaFinal(){
+        return (this.p1 + this.p2) / 2;
     }
-    public void dadosAlunos(){
-        System.out.println("Número aluno: " + this.numeroALuno + " Nome: " + this.nome + " Idade: " + this.idade);
+    public String dadosAlunos(){
+        return ("Número aluno: " + this.numeroALuno + " Nome: " + this.nome + " Idade: " + this.idade
+        + "Média: " + this.notaFinal());
     }
     public void passou(){
-        if(media >= 6){
+        if(this.notaFinal() >= 6){
             System.out.println("Aluno aprovado");}
         else {
             System.out.println("Aluno reprovado");
