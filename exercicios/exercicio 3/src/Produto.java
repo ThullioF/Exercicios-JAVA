@@ -9,6 +9,7 @@ public class Produto {
         this.preco = preco;
     }
     public Produto() {
+
     }
     public void comprar(int x){
         this.qtde += x;
@@ -29,7 +30,7 @@ public class Produto {
             this.preco -= x;
         }
         else {
-            System.out.println("");
+            System.out.println("O produto já está com valor zerado");
         }
     }
     @Override
