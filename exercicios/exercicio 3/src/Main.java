@@ -9,6 +9,8 @@ public class Main {
         obj1.descer(2);
         System.out.println(obj1.toString());
 
+        obj2.setId(2);
+        obj2.setDescricao("limpeza de carro");
         obj2.comprar(10);
         obj2.vender(2);
         obj2.subir(200);

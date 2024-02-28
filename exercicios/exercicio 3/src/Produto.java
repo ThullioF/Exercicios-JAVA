@@ -33,6 +33,12 @@ public class Produto {
             System.out.println("O produto já está com valor zerado");
         }
     }
+    public void setDescricao(String descricao){
+        this.descricao = descricao;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
     @Override
     public String toString() {
         return "Produto{" +
