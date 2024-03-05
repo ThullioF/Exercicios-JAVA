@@ -56,15 +56,10 @@ public class Cliente {
         return this.saldo;
     }
     public void realizarDeposito(float x){
-        this.saldo += x;
+        this.setSaldo(this.saldo + x);
     }
     public void realizarSaque(float x){
-        if (this.saldo - x >= 0){
-            this.saldo -= x;
-        }
-        else {
-            System.out.println("Saldo insuficiente");
-        }
+        this.setSaldo(this.saldo - x);
     }
     @Override
     public String toString() {
