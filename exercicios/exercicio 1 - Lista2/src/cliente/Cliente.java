@@ -12,7 +12,7 @@ public class Cliente {
 
     }
     public void setNumeroConta(String numeroConta){
-        if (numeroConta.length() == 8){
+        if (numeroConta.length() == 8 && numeroConta.charAt(6) == '-'){
             this.numeroConta = numeroConta;
         }
         else {
@@ -20,7 +20,7 @@ public class Cliente {
         }
     }
     public void setNumeroAgencia(String numeroAgencia){
-        if (numeroAgencia.length() == 6){
+        if (numeroAgencia.length() == 6 && numeroAgencia.charAt(4) == '-'){
             this.numeroAgencia = numeroAgencia;
         }
         else {
