@@ -1,7 +1,18 @@
+package aluno;
 public class Aluno {
     private int numeroAluno, idade;
     private String nome;
     private float p1, p2;
+    public Aluno(int numeroAluno, int idade, String nome, float p1, float p2) {
+        this.numeroAluno = numeroAluno;
+        this.idade = idade;
+        this.nome = nome;
+        this.p1 = p1;
+        this.p2 = p2;
+    }
+    public Aluno(){
+
+    }
 
     public int getNumeroAluno() {
         return numeroAluno;
@@ -45,7 +56,7 @@ public class Aluno {
     }
     public void setP1(float p1) {
         if (p1 >= 0) {
-            this.p1 = idade;
+            this.p1 = p1;
         }
         else {
             System.out.println("Nota 1 negativa inválida");
@@ -57,10 +68,20 @@ public class Aluno {
     }
     public void setP2(float p2) {
         if (p2 >= 0) {
-            this.p2 = idade;
+            this.p2 = p2;
         }
         else {
             System.out.println("Nota 2 negativa inválida");
         }
+    }
+
+    public void notaFinal(){
+        float media = (getP1()+getP2()) / 2;
+        System.out.println("Média: " + media);
+    }
+    public void dadosAluno (){
+        System.out.println("Número aluno: " + numeroAluno);
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
     }
 }
