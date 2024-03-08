@@ -1,6 +1,8 @@
+package shoppingCart;
 import java.util.ArrayList;
 import java.util.List;
-
+import carItem.CarItem;
+import product.Product;
 public class ShoppingCart {
     private int id;
     private float totalPrice;
@@ -39,7 +41,7 @@ public class ShoppingCart {
     }
 
     //metodo para adicionar um CarItem no vetor
-    //caracteriza uma composição, pois CarItem é criadp em função do ShoppingCart
+    //caracteriza uma composição, pois CarItem é criado em função do ShoppingCart
     public void addCarItem(int id, int quantity, Product product){
         this.carItens.add(new CarItem(id, quantity,product));
     }

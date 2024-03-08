@@ -1,3 +1,5 @@
+package carItem;
+import product.Product;
 public class CarItem {
     private int id, quantity;
     Product product; //objeto-parte dentro do objeto-todo
