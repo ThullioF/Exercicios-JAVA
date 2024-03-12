@@ -47,6 +47,10 @@ public class Forum {
         this.messages = messages;
     }
 
+    public void addForum(int id, String textadd, Person person){
+        this.messages.add(new Message(id, textadd, person));
+    }
+
     @Override
     public String toString() {
         return "Forum{" +
