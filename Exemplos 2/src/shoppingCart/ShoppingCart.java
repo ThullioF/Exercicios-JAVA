@@ -44,6 +44,14 @@ public class ShoppingCart {
     //caracteriza uma composição, pois CarItem é criado em função do ShoppingCart
     public void addCarItem(int id, int quantity, Product product){
         this.carItens.add(new CarItem(id, quantity,product));
+        calculateTotalPrice();
+    }
+
+    public void calculateTotalPrice(){
+        for (CarItem item: carItens){
+            this.totalPrice = 0;
+            this.totalPrice += item.getQuantity() * item.getProduct().getPrice();
+        }
     }
 
     @Override
