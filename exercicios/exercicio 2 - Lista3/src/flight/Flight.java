@@ -1,3 +1,5 @@
+package flight;
+
 public class Flight {
     private int id;
     private String origin, destination;

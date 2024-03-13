@@ -1,3 +1,5 @@
+package passenger;
+
 public class Passenger {
     private int id;
     private String name, cpf;

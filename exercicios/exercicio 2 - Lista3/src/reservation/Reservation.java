@@ -1,4 +1,7 @@
+package reservation;
 import java.time.LocalDate;
+import passenger.Passenger;
+import flight.Flight;
 
 public class Reservation {
     private int id;
