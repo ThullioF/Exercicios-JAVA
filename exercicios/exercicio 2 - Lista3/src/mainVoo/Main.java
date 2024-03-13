@@ -14,7 +14,9 @@ public class Main {
         Flight voo2 = new Flight(4,"Portugal","França");
 
         Reservation reservado1 = new Reservation(5, LocalDate.of(2024,9,30),passenger1,voo1);
+        Reservation reservado2= new Reservation(6,LocalDate.of(2024,12,25),passenger2,voo2);
 
         System.out.println(reservado1.toString());
+        System.out.println(reservado2.toString());
     }
 }
