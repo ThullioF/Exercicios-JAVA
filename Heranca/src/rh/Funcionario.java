@@ -2,8 +2,8 @@ package rh;
 public class Funcionario {
     protected String nome, endereco, cpf;
     protected float salario;
+    public Funcionario(){
 
-    public Funcionario() {
     }
     public Funcionario(String nome, String endereco, String cpf, float salario) {
         this.setNome(nome);
@@ -51,8 +51,6 @@ public class Funcionario {
     }
 
     public float calculaSalario(){
-        return this.salario ;
+        return this.salario;
     }
-
 }
-
