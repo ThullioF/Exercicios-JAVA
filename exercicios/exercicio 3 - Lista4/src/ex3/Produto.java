@@ -1,6 +1,6 @@
 package ex3;
 import java.util.Random;
-public class Produto {
+public abstract class Produto {
     private int nrSerial, volume;
     private String teste = "não testado";
 
@@ -30,26 +30,9 @@ public class Produto {
         this.teste = teste;
     }
 
-    public boolean testaUnidade() {
-        if (teste.equals("não testado")) {
-            Random random = new Random();
-            double randomNumber = random.nextDouble();
-            if (randomNumber < 0.9) {
-                teste = "aprovado";
-                return true;
-            } else {
-                teste = "reprovado";
-                return false;
-            }
-        } else {
-            System.out.println("O teste já foi realizado para este produto.");
-            return false;
-        }
-    }
+    public abstract boolean testaUnidade();
 
-    public void setaVolume(int volume) {
-        this.volume = volume;
-    }
+    public abstract void setaVolume(int volume);
 
     @Override
     public String toString() {
