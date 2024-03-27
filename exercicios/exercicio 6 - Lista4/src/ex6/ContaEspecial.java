@@ -1,10 +1,10 @@
-package ex5;
-public class Conta {
+package ex6;
+public class ContaEspecial {
     private String nome;
     private float salario, saldo, limite;
     private int nr_conta;
 
-    public Conta(String nome, float salario, float saldo, float limite, int nr_conta) {
+    public ContaEspecial(String nome, float salario, float saldo, float limite, int nr_conta) {
         this.setNome(nome);
         this.setSalario(salario);
         this.setSaldo(saldo);
@@ -37,10 +37,10 @@ public class Conta {
         return limite;
     }
     public void setLimite(float limite) {
-        if (limite <= salario) {
+        if (limite <= salario * 3) {
             this.limite = limite;
         } else {
-            System.out.println("O limite não pode ser maior que o salário mensal");
+            System.out.println("O limite não pode ser maior que 3x o valor do salário");
         }
     }
 
@@ -72,3 +72,4 @@ public class Conta {
         System.out.println("Saldo atual é de " + saldo);
     }
 }
+
