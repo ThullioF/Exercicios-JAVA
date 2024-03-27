@@ -1,7 +1,7 @@
 import ex6.*;
 public class Main {
     public static void main(String[] args) {
-        ContaEspecial conta1 = new ContaEspecial("Fulano",5000,10000,15000,2);
+        ContaEspecial conta1 = new ContaEspecial("Fulano",5000,10000,10000,1);
 
         conta1.deposito(1000);
         conta1.retornaSaldo();
